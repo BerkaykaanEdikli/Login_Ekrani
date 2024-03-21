@@ -1,0 +1,53 @@
+﻿@model LoginUyeModel
+
+<form action="Login/Uye" method="GET">
+    <div class="form-group" style="margin-bottom: 10px;">
+        <label asp-for="Ad"></label>
+        <input asp-for="Ad" class="form-control">
+        <span asp-validation-for="Ad"></span>
+    </div>
+    <div class="form-group" style="margin-bottom: 10px;">
+        <label asp-for="Soyad"></label>
+        <input asp-for="Soyad" class="form-control">
+        <span asp-validation-for="Soyad"></span>
+    </div>
+    <div class="form-group" style="margin-bottom: 10px;">
+        <label asp-for="KullaniciAdi"></label>
+        <input asp-for="KullaniciAdi" class="form-control">
+        <span asp-validation-for="KullaniciAdi"></span>
+    </div>
+    <div class="form-group" style="margin-bottom: 10px;">
+        <label asp-for="ePosta"></label>
+        <input asp-for="ePosta" class="form-control">
+        <span asp-validation-for="ePosta"></span>
+    </div>
+    <div class="form-group" style="margin-bottom: 10px;">
+        <label asp-for="DogumTarihi"></label>
+        <input asp-for="DogumTarihi" class="form-control">
+        <span asp-validation-for="DogumTarihi"></span>
+    </div>
+    <div class="form-group" style="margin-bottom: 10px;">
+        <label asp-for="Telefon"></label>
+        <input asp-for="Telefon" class="form-control">
+        <span asp-validation-for="Telefon"></span>
+    </div>
+    <div class="form-group" style="margin-bottom: 10px;">
+        <label asp-for="urlAdress"></label>
+        <input asp-for="urlAdress" class="form-control">
+        <span asp-validation-for="urlAdress"></span>
+    </div>
+    <div class="form-group" style="margin-bottom: 10px;">
+        <label asp-for="Sifre"></label>
+        <input asp-for="Sifre" class="form-control">
+        <span asp-validation-for="Sifre"></span>
+    </div>
+    <div class="form-group" style="margin-bottom: 10px;">
+        <label asp-for="SifreTekrar"></label>
+        <input asp-for="SifreTekrar" class="form-control">
+        <span asp-validation-for="SifreTekrar"></span>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Gönder</button>
+    </div>
+</form>
+

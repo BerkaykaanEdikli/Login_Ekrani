@@ -1,0 +1,35 @@
+﻿@model LoginUyeModel
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Adı</th>
+            <th scope="col">Soyadı</th>
+            <th scope="col">Kullanıcı Adı</th>
+            <th scope="col">E-Posta</th>
+            <th scope="col">Doğum Tarihi</th>
+            <th scope="col">Telefon</th>
+            <th scope="col">URL</th>
+            <th scope="col">Şifre</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Bilgi in Model)
+        {
+            <tr>
+                <td>@Bilgi.Ad</td>
+                <td>@Bilgi.Soyad</td>
+                <td>@Bilgi.KullaniciAdi</td>
+                <td>@Bilgi.KullaniciAdi</td>
+                <td>@Bilgi.ePosta</td>
+                <td>@Bilgi.DogumTarihi</td>
+                <td>@Bilgi.Telefon</td>
+                <td>@Bilgi.urlAdress</td>
+                <td>@Bilgi.Sifre</td>
+
+                
+            </tr>
+        }
+    </tbody>
+</table>
